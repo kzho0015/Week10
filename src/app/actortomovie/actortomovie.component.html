@@ -1,0 +1,16 @@
+<div class="form-group">
+
+    <label for="actor">Add Actor</label>
+    <select id="actor" class="form-control" [(ngModel)]="fullName">
+      <option hidden disabled selected value> -- select an actor -- </option>
+      <option *ngFor="let item of actorsDB">{{item.name}}</option>
+    </select>
+  <br>
+    <label for="movie">To Movie</label>
+    <select id="movie" class="form-control" [(ngModel)]="title">
+      <option hidden disabled selected value> -- select an movie -- </option>
+      <option *ngFor="let item of moviesDB">{{item.title}}</option>
+    </select>
+
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="actorToMovie()">Add</button>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <title>Week 9 System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/addactor" routerLinkActive="active">Add Actors</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/listactors" routerLinkActive="active">List Actors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/updateactor" routerLinkActive="active">Update Actors</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/deleteactor" routerLinkActive="active">Delete Actors</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/addmovie" routerLinkActive="active">Add Movies</a>
+    </li>
+    <li class="nav-item">
+          <a class="nav-link" routerLink="/listmovies" routerLinkActive="active">List Movies</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/deletemovie" routerLinkActive="active">Delete Movies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/addactortomovie" routerLinkActive="active">Add Actor to Movie</a>
+  </li>
+  </ul>
+</nav>
+
+<h1>Week 10</h1>
+
+<router-outlet></router-outlet>
